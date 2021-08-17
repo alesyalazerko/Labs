@@ -1,5 +1,6 @@
 import pygame
 from pygame.draw import *
+import sys
 
 pygame.init()
 
@@ -27,4 +28,4 @@ while True:
     clock.tick(FPS)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
-            pygame.quit()
+            sys.exit()
